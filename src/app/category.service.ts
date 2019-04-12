@@ -11,6 +11,6 @@ export class CategoryService {
   constructor(private http: HttpClient) { }
 
   public getAllCategories(): Observable<Array<Category>> {
-    return this.http.get<Array<Category>>('localhost:8080/category', {observe: 'body'});
+    return this.http.get<Array<Category>>('http://localhost:8080/category', {observe: 'body'});
   }
 }
